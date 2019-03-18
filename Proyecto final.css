@@ -1,0 +1,468 @@
+body{
+	font-size: 16px;
+	font-family: 'kawoszeh', sans-serif;
+	background: #233D58;
+	position: relative;
+}
+header{
+	width: 100%;
+	height: 35px;
+	background: #233D58;
+}
+header h1{
+	display:none;
+}
+/*header nav{
+	display:none;
+}*/
+header nav .menuMovil{
+	height: 25px;
+	width: 120px;
+	cursor: pointer;
+	line-height: 40px;
+	margin: 0px 0px 0px 10px;
+	padding-top: 5px;
+}
+header nav .menuMovil{
+	width: 100%;
+}
+header #prev_section, #next_section{
+	width: 25px;
+	height: 25px;
+	background: red;
+	border-radius: 50%;
+	cursor: pointer;
+	/*overflow: hidden;*/
+	margin: 5px;
+	position: absolute;
+	top: 0px;
+}
+header #prev_section{
+	right:5px;
+}
+header #next_section{
+	right: 35px;
+}
+header #prev_section img, #next_section img{
+	width: 100%;
+}
+header nav #tarjetamenu{
+	position: relative;
+	width: 300px;
+	background: white;
+	top: -30px;
+	left: 0px;
+	border-right: 3px solid #afaeae;
+	z-index: 950;
+	padding-bottom: 50px;
+}
+header nav #tarjetamenu #logo{
+	height: 200px;
+	width: 80%;
+	margin: 30px 0px;
+	margin-left: 10%;
+	margin-bottom: 50px;
+
+}
+header nav #tarjetamenu #logo img{
+	height: 80%;
+	width: 100%;
+}
+header nav #tarjetamenu ul{
+	/*background: cyan;*/
+	width: 86.8%;
+	margin-right: 0px;
+}
+header nav #tarjetamenu ul li{
+	list-style: none;
+	font-size: 1.5em;
+	line-height: 40px;
+}
+header nav #tarjetamenu ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+#slider{
+	width: 100%;
+	position: relative;
+	height: 600px;
+	background: pink;
+}
+
+#slider section.slide{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+#slider #Inicio{
+	background: #233d58;
+	font-family: 'JacksFont';
+	position: relative;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#slider #Inicio .animacion{
+	width:80%;
+	margin-left: 10%;
+	min-height: 300px;
+	background: red;
+	position: absolute;
+}
+#slider #Inicio .logoprincipal{
+	background: rgba(35,61,88,0.8);
+	position: relative;
+	width: 60vw;
+	margin-left: 20vw;
+	min-height: 430px;
+}
+#slider #Inicio .logoprincipal h2{
+	font-size: 1.2em;
+	padding-top: 80px;
+	color:white;
+	font-weight: lighter;
+}
+#slider #Inicio .logoprincipal strong{
+	font-size: 2em;
+	font-family: "kawoszeh";
+	display: block;
+}
+#slider #Inicio .logoprincipal figure,
+#slider #Inicio .logoprincipal figure img{
+	width: 100%;
+	margin: 0px;
+}
+#slider #Inicio .botonesinicio{
+	width: 100%;
+	text-align: center;
+}
+#slider #Inicio .botonesinicio > *{
+	display: inline-block;
+	width: 40%;
+	margin: 5px 2.5%;
+	color: white;
+	padding: 15px 2.5%;
+}
+#slider #Inicio a{
+	text-decoration: none;
+	background: #29abe2;
+}
+#slider #Inicio #contratame{
+	cursor: pointer;
+	background: #f8931f;
+	padding: 15px 0px;
+}
+#slider #Sobremi{
+	height: 400px;
+	background: yellow;
+}
+#slider #Skills{
+	height: 300px;
+	background: red;
+}
+#slider #Portafolio{
+	height: 200px;
+	background: blue;
+}
+#slider #Blog{
+	height: 100px;
+	background: purple;
+}
+#contacto{
+	position: absolute;
+	right:0px;
+	top: 35px;
+	width: 250px;
+	background: white;
+	border-top: 1px solid black;
+	box-shadow: 0px 0px 3px #9f9e9e;
+	font-family: 'JacksFont'
+	height: 100vh;
+	z-index: 960;
+	display: none;
+}
+#contacto #cerrarform{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 85%;
+	top: 110px;
+}
+#contacto #cerrarform:hover{
+	cursor: pointer;
+}
+#contacto #cerrarform:before{
+	font-family: 'icomoon';
+	content: "\ea0f";
+	top: 5px;
+	left: 9px;
+	position: relative;
+}
+#contacto figure{
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background: #29abe2; 
+}
+#contacto figure img{
+	height: 90%;
+	margin: 5px;
+}
+#contacto p{
+	margin: 20px;
+	width: 90%;
+	margin-left: 5%;
+}
+#contacto input, #contacto textarea{
+	display: block;
+	margin: 20px;
+	border: none;
+	border-bottom: 2px solid gray;
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom: 3px;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+#contacto #button{
+	background: #f8931f;
+	color: white
+	padding: 8px 0px;
+	border-radius: 5px;
+}
+#botoncontacto{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	color: white;
+	z-index: 920;
+	right: 10px;
+	position: fixed;
+	top: 80vh;
+	background: #f8931f;
+	right: 30px;
+}
+#botoncontacto:hover{
+	cursor: pointer;
+}
+#botoncontacto:before{
+	font-family: 'icomoon';
+	content: "\e906";
+	position: relative;
+	font-size: 2.5em;
+	top: 5px;
+	left:10px;
+}
+#contacto{
+	top: 50px;
+	width: 350px;
+}
+
+footer{
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+	z-index: 30;
+	height: 160px;
+	position: fixed;
+	bottom: -110px;
+	transition-duration: 0.4s;
+}
+footer:hover{
+	bottom: 0px;
+}
+footer:after{
+	font-family: 'icomoon'; 
+	content: '\ea41';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	/*los márgenes a continuación es para centrarlo (ancho/2)*/
+	margin-left: -40px;
+	margin-top: -20px;
+	border-radius: 50%;
+	background: black;
+	color: white;
+	font-size: 4em;
+}
+/*Lo siguiente funciona al poner el puntero sobre el footer.
+Si fuera after:hover funcionaría al poner el puntero sobre el after del footer*/
+footer:hover:after{
+	transform: rotate(180deg);
+	background: white;
+	color: black;
+	transition-duration: 0.3s;
+}
+
+footer .rrss{
+	margin-top: 60px;
+	width: 100%;
+	height: 40px;
+	
+}
+footer .rrss a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	position: relative;
+}
+footer .rrss a:before{
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	font-size: 2em;
+	top: 2px;
+	left: 4px;
+	font-family: 'icomoon';
+
+}
+footer .rrss a:nth-child(1):before{
+	content: "\ea96";
+}
+footer .rrss a:nth-child(2):before{
+	content: "\ea91";
+}
+footer .rrss a:nth-child(3):before{
+	content: "\ea92";
+}
+footer .rrss a:nth-child(4):before{
+	content: "\ea9d";
+}
+footer p{
+	font-size: 0.7em;
+	font-weight: lighter;
+	font-family: 'kawoszeh';
+}
+
+/* defino distintos tamaños de pantalla
+ para crear lo que se verá en cada una (mobile first)*/
+@media screen and (min-width: 480px){
+	#slider #Inicio .logoprincipal{
+		width: 280px;
+		left: 50%;
+		margin-left: -135px;
+		padding-bottom: 50px;
+	}
+	#slider #Inicio .logoprincipal h2{
+		font-size: 1.4em;
+	}
+	#slider #Inicio .mainlogo figure{
+		width: 80%;
+		margin-left: 10%;
+	}
+	#slider #home .botonesinicio >*{
+		width: 200px;
+	}
+}
+/*la de 600 no es tan necesaria, pero sirve
+ para algunas tablets*/
+@media screen and (min-width: 600px){
+	body{
+		background: orange;
+	}
+}
+@media screen and (min-width: 767px){
+	body{
+		background: yellow;
+	}
+	header{
+		height: 50px;
+	}
+	header h1{
+		display: inline-block;
+		width: 22%;
+		margin: 0px;
+		height: 50px;
+		margin-left: 5px;
+		line-height: 50px;
+		min-width: 200px;
+	}
+	header h1>*{
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color: white;
+		font-size: 0.6em;
+		margin: 0px 5px;
+	}
+	header h1 figure{
+		height: 40px;
+		width: 30px;
+		margin: 0px;
+		border-radius: 50%
+	}
+	header h1 figure img{
+		width: 100%
+	}
+	header nav{
+		display: inline-block;
+		vertical-align: middle;
+		width: 70%;
+		position: absolute;
+		margin-top: 20px;
+		margin-right: 30px;
+	}
+	header nav #showMenu, header nav #hideMenu{
+		display: none;
+	}
+	header nav #tarjetamenu{
+		display: inline-block;
+		border: none;
+		position: relative;
+		top: 0px;
+		width: 120%;
+		background: none;
+		text-align: right;
+		padding-bottom: 0px;
+	}
+	header nav #tarjetamenu figure{
+		display: none;
+	}
+	header nav #tarjetamenu ul{
+		padding: 0px;
+		margin: 0px;
+		margin-top: -15px;
+		margin-right: 20px;
+	}
+	header nav #tarjetamenu ul li{
+		display: inline-block;
+		width: 80px;
+		background: none;
+		text-align: center;
+		font-size: 1.2em;
+		margin: 0px -5px;
+
+	}
+	header nav #tarjetamenu ul li a{
+		color:white;
+	}
+	header #prev_section, #next_section{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: #29abe2;
+		right: 40px;
+		z-index: 900;
+		border-radius: 50%
+	}
+	header #prev_section{
+		top: 115px;
+	}
+	header #next_section{
+		top: 190px;
+	}
+	header #prev_section img, #next_section img{
+
+	}
+}
+@media screen and (min-width: 950px){
+	body{
+		background: white;
+	}
+}

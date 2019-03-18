@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Daniel Vergara Solervicens</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+	<meta name="keywords" content="Diseño web, maquetación, casi front">
+	<meta name="description" content="Diseño web profesional, moderno y con buen gusto">
+	<meta name="owner" content="Daniel Vergara">
+	<meta name="author" content="Daniel Vergara">
+	<meta name="robots" content="index, follow">
+
+
+	<script type="text/javascript" src="modernizr-custom.js"></script>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="JacksFont.css">
+	<link rel="stylesheet" type="text/css" href="kawoszeh.css">
+	<link rel="stylesheet" type="text/css" href="icomoon.css">
+	<link rel="stylesheet" type="text/css" href="Proyecto final.css">
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="Proyecto final.html">
+				<figure><img src="foto3.jpg"></figure>
+			</a>
+			<a href="Proyecto final.html">Daniel Vergara</a>
+		</h1>
+		<nav id="menu">
+			<figure id="showMenu" class="menuMovil" onclick="displayMenu()"><img src="icomoonsvg/png/menu.png"></figure>
+			<div id="tarjetamenu">
+				<figure id="hideMenu" class="menuMovil" onclick="displayMenu()"><img src="icomoonsvg/png/exit.png"></figure>
+				<figure id="logo"><img src="HayTabla2.jpg"></figure>
+				<ul>
+					<li><a onclick="navSection('Inicio')" href="#">Inicio</a></li>
+					<li><a onclick="navSection('Sobremi')" href="#">Sobre mí</li>
+					<li><a onclick="navSection('Skills')" href="#">Skills</li>
+					<li><a onclick="navSection('Portafolio')" href="#">Portafolio</li>
+					<li><a onclick="navSection('Blog')" href="#">Blog</li>
+					<li><a onclick="displayContacto('block')" href="#">Contacto</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="prev_section" onclick="displaySection('prev')"><img src="icomoonsvg/png/next.png"></div>
+		<div id="next_section" onclick="displaySection('next')"><img src="icomoonsvg/png/previous.png"></div>
+		
+	</header>
+
+	<div id="slider">
+		<section class="slide" id="Inicio" style="display:block">
+			<div class="animacion">
+				
+			</div>
+			<div class="logoprincipal">
+				<h2>Intentando ser un <strong>Maquetador</strong></h2>
+				<figure><img src="Isa2.jpg"></figure>
+			</div>
+			<div class="botonesinicio">
+				<div id="contratame" onclick="displayContacto('block')">CONTRÁTAME</div>
+				<a href="CV Daniel Vergara Solervicens.pdf" target="_blank">DESCARGAR CV</a>
+			</div>
+		</section>
+			
+
+		<section class="slide" id="Sobremi" style="display:none"></section>
+		<section class="slide" id="Skills" style="display:none"></section>
+		<section class="slide" id="Portafolio" style="display:none"></section>
+		<section class="slide" id="Blog" style="display:none"></section>
+	</div> 
+
+	<div id="contacto">
+		<form action="contacto.php" id="formulario" name="formulario" method="post">
+			<div id="cerrarform" onclick="displayContacto('none')"></div>
+			<figure id="logocontacto"><img src="icomoonsvg/png/mail2.png"></figure>
+			<p>Hola</p>
+			<input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+			<input type="text" id="correo" name="correo" placeholder="Ingrese su correo">
+			<textarea name="comentario" id="comentario" placeholder="Ingrese sus comentarios"></textarea>
+			<input type="submit" name="submit" id="button" value="Enviar">
+		</form>
+	</div>
+
+	<div id="botoncontacto" onclick="displayContacto('block')"></div>
+	<footer>
+		<div class="rrss">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+		<p>2018 All rights reserved Privacity Policy</p>
+	</footer>
+
+	<script type="text/javascript">
+		var sections = new Array(5);
+			sections[0] = "Inicio";
+			sections[1] = "Sobremi";
+			sections[2] = "Skills";
+			sections[3] = "Portafolio";
+			sections[4] = "Blog";
+		alertSize();
+		function alertSize() { 
+  			var myWidth = 0, myHeight = 0; 
+  			if( typeof( window.innerWidth ) == 'number' ) { 
+    			//No-IE 
+    			myWidth = window.innerWidth; 
+    			myHeight = window.innerHeight; 
+  			}
+  			else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) { 
+    			//IE 6+ 
+    			myWidth = document.documentElement.clientWidth; 
+    			myHeight = document.documentElement.clientHeight; 
+  			}
+  			else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) { 
+    			//IE 4 compatible 
+    			myWidth = document.body.clientWidth; 
+    			myHeight = document.body.clientHeight; 
+  			}
+  			var display;
+			var tarjetamenu= document.getElementById("tarjetamenu");
+			display = tarjetamenu.style.display;  			
+  			if (myWidth<767){
+				tarjetamenu.style.display="none";
+			}
+			else{
+				tarjetamenu.style.display="block";
+			}
+  		} 
+		function displayMenu(){
+			var display;
+			var tarjetamenu= document.getElementById("tarjetamenu");
+			display = tarjetamenu.style.display;
+			
+			if (display=="none"){
+				tarjetamenu.style.display="block"
+			}
+			else{
+				tarjetamenu.style.display="none";
+			}
+		}
+		function setColors(i){
+			var search
+			var bgbody;
+			var bgmenu;
+			if (sections[i]=="Inicio"){
+				bgbody="#233d58";
+				bgmenu="#233d58";
+			}
+			else{
+				bgbody="#f1f1f1";
+				bgmenu="#29abe2";
+			}
+			search = document.getElementById(sections[i]);
+			search.style.background = bgbody;
+			var menu = document.getElementsByTagName("header")[0];
+			menu.style.background = bgmenu;
+		}
+		function navSection(nav){
+			var search;
+			var show;
+
+			for (var i=0; i<5; i++){
+				search = document.getElementById(sections[i]);
+				search.style.display = "none";
+
+				if (sections[i] == nav){
+					search.style.display = "block";
+					setColors(i);
+				}
+			}
+		}
+		function displaySection(nav){
+			
+			var search;
+			var show;
+
+			for (var i=0; i<5; i++){
+				search = document.getElementById(sections[i]);
+				show = search.style.display;
+
+				if (show=="block"){
+					search.style.display = "none";
+					if (nav=="next"){
+						i++;
+						if (i>4) i=0;
+					}
+					if (nav=="prev"){
+						i--;
+						if (i<0) i=4;
+					}
+				search = document.getElementById(sections[i]);
+				search.style.display="block";
+				break;
+				}
+			}
+			setColors(i);
+		}
+		function displayContacto(status){
+			var form = document.getElementById("contacto");
+			form.style.display = status;
+		}
+		
+	</script>
+
+</body>
+</html>
